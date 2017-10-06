@@ -1,0 +1,229 @@
+html,
+body{
+	margin:0;
+	font-family:Comic sans MS;
+	width: 100%;
+}
+#navbar{
+
+}
+#navbar header{
+	background-color: #15242a;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	max-height: 60px;
+}
+#navbar header h1{
+	text-align: center;
+ 	font-size: 25px;	
+ 	color: #eee;
+ 	line-height: 50px;
+ 	padding-top: 0;
+ 	margin-top: 0;
+ 	font-family: Comic sans MS;
+}
+.navmenu{
+	margin-top: 60px;
+	background-color: #eee;
+	max-width: 100%;
+	height: 300px;
+}
+.navmenu h1{
+	padding-top: 50px;
+	padding-left: 40px;
+	text-transform: uppercase;
+	font-family: Comic sans Ms;
+	font-weight: bold;
+	font-size: 26px;
+	color: teal;
+}
+#search {
+	background-position: 10px 12px; 
+	background-repeat: no-repeat; 
+	width: 31%; 
+	font-size: 16px; 
+	padding: 6px 10px 6px 20px; 
+	margin-left: 40px;
+	border:none;
+}
+#searchbtn{
+	padding: 8px 10px 7px 20px; 
+	text-align: center;
+	background-color:#101010;
+	color:teal;
+	border:none;
+	font-weight: bold;
+	border-left: 1px solid #eee;
+}
+#searchbtn:hover{
+	color:#000;
+	background-color:teal;
+}
+.navmenu ul{
+	list-style-type: none;
+	margin-left: 40px;
+	margin-top: 30px;
+	padding: 0;
+}
+.navmenu ul li{
+	float:left;
+	padding-right: 5px;
+	margin-bottom: 20px;
+}
+.navmenu ul li a{
+	display: block;
+ 	color: black;
+ 	text-align:center;
+ 	text-decoration: none;
+	width: 120px;
+	height: 30px;
+	line-height: 30px;
+}
+.navmenu  ul li a:hover {
+	color:teal;
+	background-color:#101010;
+	border-radius: 2px;
+}
+.navmenu  ul li button{
+ 	border:1px solid #fff;
+ 	color: black;
+ 	text-align: center;
+  	text-decoration: none;
+ 	display: block;
+ 	border-radius: 2px;
+}
+.navmenu ul li button:hover{
+	border-radius: 2px;
+}
+.navmenu  ul li button a:hover{
+	color:#fff;
+}
+.navmenu img{
+	float: right;
+	margin-top: -150px;	
+	margin-right: 150px;
+}
+.active{
+	background-color:#fff;
+	border-radius: 2px;
+}
+#list{
+	background-color: #101010;
+}
+#list legend{
+	padding-top: 30px;	
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	color:teal;
+	font-size: 20px;
+}
+#list table{
+	margin-right:100px;
+
+}
+#list  table th{
+	color: teal;
+	font-size: 18px;
+	text-transform: uppercase;
+	border-bottom: 2px solid #000;
+	text-align: center;
+	
+}
+#list table td{
+	font-size: 12px;
+	color: #eee;
+	text-align: center;
+
+}
+#list table td:hover{
+	font-size: 13px;
+	color:green;
+	font-weight: bold;
+
+}
+#list svg{
+	margin-left:0px;
+}
+#gallery {
+	margin: 15px;
+	border: 1px solid #ccc;
+	float: left;
+	width: 300px;
+	background-color: #101010;
+	color: teal;
+	border-radius: 4px;
+	border:2px solid #fff;
+	margin-bottom: 100px;
+}
+#gallery:hover {
+	border: 2px solid #777;
+}
+#gallery img {
+	width: 100%;
+	height: auto;
+	border-radius:4px;
+}
+#gallery img:hover {
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+}
+#desc {
+	padding: 15px;
+	text-align: center;
+}
+#signupform{
+	background-color: #eee;
+}
+#signupform legend{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 30px;
+	color: teal;
+}
+#signupform input[type=text], input[type=password] {
+	text-align: left;
+	width: 50%;
+	padding: 12px 20px;
+	margin: 8px 20px  10px;
+	border: 1px solid #ccc;
+}
+#signupform button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	width: 30%;
+	margin-left: 10%;
+}
+#signupform .cancelbtn{
+	padding: 10px 10px;
+    	background-color: #f44336;
+}
+#signupform .signupbtn{
+	padding: 10px 10px;
+}
+#signupform .cancelbtn{
+ 	width: 10%;
+}
+#signupform .signupbtn {
+	width: 10%;
+}
+#signupform .container {
+    	padding: 16px;
+}
+#signupform .clearfix:after {
+    	content: "";
+    	clear: both;
+    	display: table;
+}
+hr {
+  height: 0;
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
