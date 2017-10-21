@@ -1,226 +1,144 @@
 html,
 body{
-	margin:0;
-	font-family:Comic sans MS;
-	width: 100%;
-}
-#navbar{
-
-}
-#navbar header{
-	background-color: #15242a;
-	position: fixed;
-	width: 100%;
-	top: 0;
-	max-height: 60px;
-}
-#navbar header h1{
-	text-align: center;
- 	font-size: 25px;	
- 	color: #eee;
- 	line-height: 50px;
- 	padding-top: 0;
- 	margin-top: 0;
- 	font-family: Comic sans MS;
-}
-.navmenu{
-	margin-top: 60px;
-	background-color: #eee;
-	max-width: 100%;
-	height: 300px;
-}
-.navmenu h1{
-	padding-top: 50px;
-	padding-left: 40px;
-	text-transform: uppercase;
-	font-family: Comic sans Ms;
-	font-weight: bold;
-	font-size: 26px;
-	color: teal;
-}
-#search {
-	background-position: 10px 12px; 
-	background-repeat: no-repeat; 
-	width: 31%; 
-	font-size: 16px; 
-	padding: 6px 10px 6px 20px; 
-	margin-left: 40px;
-	border:none;
-}
-#searchbtn{
-	padding: 8px 10px 7px 20px; 
-	text-align: center;
-	background-color:#101010;
-	color:teal;
-	border:none;
-	font-weight: bold;
-	border-left: 1px solid #eee;
-}
-#searchbtn:hover{
-	color:#000;
-	background-color:teal;
-}
-.navmenu ul{
-	list-style-type: none;
-	margin-left: 40px;
-	margin-top: 30px;
+	margin: 0;
 	padding: 0;
+	font-family:monofur;
 }
-.navmenu ul li{
+.navbar{
+	background-color: #222;
+  border-color: #080808;
+	position: relative;
+	margin-bottom:20px;
+	border:1px transparent;
+	min-height:50px;
+}
+.container{
+	padding-left: 15px;	
+	padding-right: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#container{
+	padding-right: 150px;
+  padding-left: 150px;
+  border-radius: 6px;
+}
+.navbar-header{
+	margin-right: -15px;
+ 	margin-left: -15px;
+}
+.navbar-brand{
+  float: left;
+  height: 50px;
+  padding: 15px 15px;
+  font-size: 24px;
+  line-height: 20px;
+}
+.navbar-brand a{
+	text-decoration: none;
+	color:teal;
+}
+.navbar-brand a:hover,
+.navbar-brand a:focus {
+  text-decoration: none;
+  color: #eee;
+}
+.nav {
 	float:left;
-	padding-right: 5px;
-	margin-bottom: 20px;
+  padding-left:15px;
+  margin-bottom: 0;
+  list-style: none;
+  margin: 7.5px -15px;
 }
-.navmenu ul li a{
-	display: block;
- 	color: black;
- 	text-align:center;
- 	text-decoration: none;
-	width: 120px;
-	height: 30px;
-	line-height: 30px;
-}
-.navmenu  ul li a:hover {
-	color:teal;
-	background-color:#101010;
-	border-radius: 2px;
-}
-.navmenu  ul li button{
- 	border:1px solid #fff;
- 	color: black;
- 	text-align: center;
-  	text-decoration: none;
- 	display: block;
- 	border-radius: 2px;
-}
-.navmenu ul li button:hover{
-	border-radius: 2px;
-}
-.navmenu  ul li button a:hover{
-	color:#fff;
-}
-.navmenu img{
-	float: right;
-	margin-top: -150px;	
-	margin-right: 150px;
-}
-.active{
-	background-color:#fff;
-	border-radius: 2px;
-}
-#list{
-	background-color: #101010;
-}
-#list legend{
-	padding-top: 30px;	
-	text-align: center;
-	text-transform: uppercase;
-	font-weight: bold;
-	color:teal;
-	font-size: 20px;
-}
-#list table{
-	margin-right:100px;
-
-}
-#list  table th{
-	color: teal;
-	font-size: 18px;
-	text-transform: uppercase;
-	border-bottom: 2px solid #000;
-	text-align: center;
-	
-}
-#list table td{
-	font-size: 12px;
-	color: #eee;
-	text-align: center;
-
-}
-#list table td:hover{
-	font-size: 13px;
-	color:green;
-	font-weight: bold;
-
-}
-#list svg{
-	margin-left:0px;
-}
-#gallery {
-	margin: 15px;
-	border: 1px solid #ccc;
+.nav li {
 	float: left;
-	width: 300px;
-	background-color: #101010;
-	color: teal;
-	border-radius: 4px;
-	border:2px solid #fff;
-	margin-bottom: 100px;
+  position: relative;
+  display: block;
 }
-#gallery:hover {
-	border: 2px solid #777;
+.nav li a {
+  position: relative;
+  display: block;
+  padding: 7.5px 15px;
+  text-decoration: none;
+  color:teal;
+  line-height: 20px;
 }
-#gallery img {
-	width: 100%;
-	height: auto;
-	border-radius:4px;
+.nav li a:hover,
+.nav li a:focus {
+  text-decoration: none;
+  background-color: #eee;
+  border-radius: 4px;
+  color:#222;
 }
-#gallery img:hover {
-	-webkit-transform: scaleX(-1);
-	transform: scaleX(-1);
+.navbar-right {
+  float: right !important;
+  margin-right:15px;
 }
-#desc {
-	padding: 15px;
-	text-align: center;
+.navbar-btn {
+  margin-top: 8px;
+  margin-bottom: 10px;
+  line-height: 20px;
 }
-#signupform{
-	background-color: #eee;
+.navbar-btn button{
+	color:#eee;
+  background-color: #222;
+  border-color: #111;
+  padding: 5px 8px;
+  font-size: 14px;
+  line-height: 18px;
+  border-radius: 4px;
 }
-#signupform legend{
-	text-transform: uppercase;
-	font-weight: bold;
-	font-size: 30px;
-	color: teal;
+.jumbotron {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: #eee;
+  margin-top:-20px;
+  border-radius:4px;
 }
-#signupform input[type=text], input[type=password] {
-	text-align: left;
-	width: 50%;
-	padding: 12px 20px;
-	margin: 8px 20px  10px;
-	border: 1px solid #ccc;
+.jumbotron h1{
+  text-align: center;
+  color: teal;
+  font-weight: bold;
+  font-size: 50px;
 }
-#signupform button {
-	background-color: #4CAF50;
-	color: white;
-	padding: 14px 20px;
-	margin: 8px 0;
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
-	width: 30%;
-	margin-left: 10%;
+.jumbotron p {
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
+  text-align: center;
 }
-#signupform .cancelbtn{
-	padding: 10px 10px;
-    	background-color: #f44336;
+.form{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 50px;
+  padding-left: 350px;
 }
-#signupform .signupbtn{
-	padding: 10px 10px;
+label {
+  font-weight: bold;
+  color: teal;
+  font-size: 18px;
+  border-radius:2px;
 }
-#signupform .cancelbtn{
- 	width: 10%;
+.row {
+  margin-right:auto;
+  margin-left:auto;
 }
-#signupform .signupbtn {
-	width: 10%;
+.form-group {
+  margin-bottom: 15px;
 }
-#signupform .container {
-    	padding: 16px;
-}
-#signupform .clearfix{
-	margin-right: 200px;
-}
-#signupform .clearfix:after {
-    	content: "";
-    	clear: both;
-    	display: table;
+.form-control {
+  display: block;
+  width: 50%;
+  height: 34px;
+  padding: 6px 12px;
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
